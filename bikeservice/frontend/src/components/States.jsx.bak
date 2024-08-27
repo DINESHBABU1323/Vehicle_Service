@@ -1,0 +1,66 @@
+// import { DataTable } from 'primereact/datatable';
+// import { Column } from 'primereact/column';
+// import { Link } from "react-router-dom";
+// // import { useNavigate } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import React from 'react';
+
+
+// function States() {
+//     return (
+//     <DataTable value={products} tableStyle={{ minWidth: '50rem' }}>
+//     <Column field="code" header="Code"></Column>
+//     <Column field="name" header="Name"></Column>
+//     <Column field="category" header="Category"></Column>
+//     <Column field="quantity" header="Quantity"></Column>
+// </DataTable>
+//     )}
+
+// export default States;
+import React, { useState, useEffect } from 'react';
+// import { DataTable } from 'primereact/datatable';
+// import { Column } from 'primereact/column';
+import 'bootstrap/dist/css/bootstrap.min.css';
+function States(){
+    return(
+        <div class='mt-5 pt-2'>
+            <table class='table'>
+                <thead style={{backgroundColor: "black"}}>
+                <tr>
+                <th>Name</th>
+                <th>Mail</th>
+                <th>Model</th>
+                <th>Service</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ramji</td>
+                    <td>ramji@gmail.com</td>
+                    <td>Activa6g</td>
+                    <td>general service</td></tr>
+                </tbody>
+            </table>
+        </div>
+    )
+}
+// function States() {
+//     const [products, setProducts] = useState([]);
+
+//     useEffect(() => {
+//         fetch('http://localhost:5000/api/products')
+//             .then(response => response.json())
+//             .then(data => setProducts(data))
+//             .catch(error => console.error('Error fetching products:', error));
+//     }, []);
+
+//     return (
+//         <DataTable value={products} tableStyle={{ minWidth: '50rem' }}>
+//             <Column field="fullname" header="Code"></Column>
+//             <Column field="emailid" header="Name"></Column>
+//             <Column field="model" header="Category"></Column>
+//             <Column field="service" header="Quantity"></Column>
+//         </DataTable>
+//     );
+// }
+
+export default States;
